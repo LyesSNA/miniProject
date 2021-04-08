@@ -19,7 +19,7 @@ public class EqualityElevator implements Elevator {
 	private int capacity;
 	private LocalTime time;
 	private List<Person> people = new ArrayList<>();
-	private List<Integer> destinations = List.of();
+	private List<Integer> destinations = new ArrayList<>();
 
 	public EqualityElevator(int capacity) {
 		this.capacity = capacity;
@@ -103,9 +103,9 @@ public class EqualityElevator implements Elevator {
 		if(!peopleByFloor.get(indexOfCurrentFloor).isEmpty()) {
 			List<Integer> intermediateDestinations = findDestinationFloors(peopleByFloor.get(floor -1));	
 			List<Integer> additionnaFloors = weCanTakeThem(intermediateDestinations);
-			additionnaFloors.sort(Comparator.naturalOrder());
-			additionnaFloors.add(1);
+			System.out.println( "\n\n\t\t\t" + destinations + "\t\t\t\t" + additionnaFloors +"\n");
 			destinations.addAll(destinations.size(), additionnaFloors);
+			System.out.println("\t\t\t\t\n" + destinations);
 		}
 		
 		this.currentFloor = floor;
@@ -130,10 +130,12 @@ public class EqualityElevator implements Elevator {
 		int signFromDirection;
 		signFromDirection = signFromEnum();
 		
-		List<Integer> additionnalPeople = intermediateDestinations.stream()
-								.filter(d -> signFromDirection * d > signFromDirection * (indexOfCurrentFloor))
+		List<Integer> additionnalFloors = intermediateDestinations.stream()
+								.filter(d -> signFromDirection * d > signFromDirection * (indexOfCurrentFloor) && !destinations.contains(d))
+								.distinct()
+								.sorted()
 								.collect(Collectors.toList());
-		return additionnalPeople;
+		return additionnalFloors;
 	}
 
 	private int signFromEnum() {
