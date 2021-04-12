@@ -10,10 +10,11 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class EqualityElevator implements Elevator {
-	private static final int ANGER_LIMIT_THRESHOLD = 300;
+	private static final int ANGER_LIMIT_THRESHOLD = 600;
 	private DIRECTION direction = DIRECTION.UP;
 	private int currentFloor = 1;
 	private List<List<Person>> peopleByFloor = List.of();
@@ -38,24 +39,14 @@ public class EqualityElevator implements Elevator {
 
 	@Override
 	public List<Integer> chooseNextFloors() {
-
+		destinations.addAll(weCanTakeThemOnStop(destinations, currentFloor));
 		if (!this.destinations.isEmpty()) {
-			destinations.addAll(weCanTakeThem(destinations, currentFloor));
 			return this.destinations;
 		}
-		
+
 
 		int numberOfPeopleWaiting = countWaitingPeople();
 		if (numberOfPeopleWaiting > 0) {
-
-//    		List<Integer> destinations = destinationsToPickUpAngryPeople();
-//    		
-//    		if (!destinations.isEmpty()) {
-//    			this.destinations = destinations;
-//    			return this.destinations;
-//    		}
-
-			
 			
 			List<Integer> nonEmptyFloors = findNonEmptyFloor();
 			int nonEmptyFloor = nonEmptyFloors.get(0);
@@ -69,34 +60,17 @@ public class EqualityElevator implements Elevator {
 				List<Integer> destinationFloorsForCurrentFloor = 
 						findDestinationFloors(waitingListForCurrentFloor);
 
-				this.destinations  = destinationFloorsForCurrentFloor;
-				return this.destinations;
+				destinations.addAll(destinationFloorsForCurrentFloor);
+				destinations.sort(Comparator.naturalOrder());
+
+				return destinations;
 			}
 		}
-		
+
 
 		return List.of(1);
 	}
 
-	
-	
-	private List<Integer> destinationsToPickUpAngryPeople() {
-
-		for (int indexFloor = 0 ; indexFloor < Building.MAX_FLOOR ; indexFloor++) {
-			List<Person> waitingList = this.peopleByFloor.get(indexFloor);
-			if (!waitingList.isEmpty()) {
-				Person mostPatientPerson = waitingList.get(0);
-				LocalTime arrivalTime = mostPatientPerson.getArrivalTime();
-				Duration waitingTime = Duration.between(arrivalTime, this.time); 
-				long waitingTimeInSeconds = waitingTime.toSeconds();
-				if (waitingTimeInSeconds >= ANGER_LIMIT_THRESHOLD) {
-					List<Integer> result = List.of(indexFloor + 1, mostPatientPerson.getDestinationFloor());
-					return new ArrayList<>(result);
-				}
-			}
-		}
-		return List.of();
-	}
 
 	private List<Integer> findDestinationFloors(List<Person> waitingListForCurrentFloor) {
 		return waitingListForCurrentFloor.stream()
@@ -105,6 +79,18 @@ public class EqualityElevator implements Elevator {
 				.sorted()
 				.collect(Collectors.toList());
 	}
+
+
+	private int getPersonsFloor(Person person) {
+
+		List<Person> list = peopleByFloor.stream()
+				.filter(p -> p.contains(person))
+				.findAny()
+				.get();
+
+		return peopleByFloor.indexOf(list);
+	}
+
 
 	private List<Integer> findNonEmptyFloor() {
 		for (int indexFloor = 0 ; indexFloor < Building.MAX_FLOOR ; indexFloor++) {
@@ -123,28 +109,50 @@ public class EqualityElevator implements Elevator {
 
 	@Override
 	public void arriveAtFloor(int floor) {
-
-		
-
 		this.currentFloor = floor;
 	}
-
 	
+
+	int index;
+	private List<Integer> WeCanTakeThemOnTheWay(){
+		List<Integer> intermediateFloors = new ArrayList<>(); 
+
+			for (int indexFloor = currentFloor-2; indexFloor > 0 ; indexFloor --) {
+				index = indexFloor;			
+				List<Person> waitingList = this.peopleByFloor.get(indexFloor);
+				System.out.println("\n\t\t "+"waitingList    " + this.time + "    "+waitingList);
+				if (!waitingList.isEmpty()) {
+					
+					
+					List<Person> sameDirection = waitingList.stream()
+							.filter(p -> p.getDestinationFloor() < index)
+							.collect(Collectors.toList());
+					System.out.println("\n\t\t "+"peopleInIntermediateFloors    " + this.time + "    "+sameDirection);
+
+					
+					if (!sameDirection.isEmpty())
+						intermediateFloors.add(indexFloor+1);
+
+			}
+		}
+			System.out.println("\n\n" + this.time + "   " + intermediateFloors +"\n");
+		return intermediateFloors;
+	}
+
 	int signFromDirection;
-	private List<Integer> weCanTakeThem(List<Integer> intermediateDestinations, int floor) {
-		int signFromDirection;
-		
-		if(floor == 9)
+	private List<Integer> weCanTakeThemOnStop(List<Integer> intermediateDestinations, int floor) {
+	
+		if(destinations.size() == 0 && this.direction == direction.UP)
 			signFromDirection = -1;
 		else
-			signFromDirection = signFromEnum();
-		
-			List<Integer> additionnalFloors = intermediateDestinations.stream()
-					.filter(d -> signFromDirection * d > signFromDirection * (floor) 
-							&& !destinations.contains(d))
-					.distinct()
-					.collect(Collectors.toList());
-			
+			signFromDirection = 1;
+
+		List<Integer> additionnalFloors = intermediateDestinations.stream()
+				.filter(d -> signFromDirection * d > signFromDirection * (floor) 
+						&& !destinations.contains(d))
+				.distinct()
+				.collect(Collectors.toList());
+
 		this.signFromDirection = signFromDirection;
 		return additionnalFloors;
 	}
@@ -156,9 +164,9 @@ public class EqualityElevator implements Elevator {
 			return 1;
 	}
 
-
 	@Override
 	public void loadPeople(List<Person> people) {
+		
 		this.people.addAll(people);  
 		int indexFloor = this.currentFloor -1;
 		this.peopleByFloor.get(indexFloor).removeAll(people);
@@ -170,19 +178,28 @@ public class EqualityElevator implements Elevator {
 		if (!this.destinations.isEmpty()) {
 			this.destinations.remove(0);
 		}	
-		
+//		System.out.println("\n\n" + this.time + "   " + direction+ "   " + destinations+"\n");
+		List<Integer> weCanTakeThemOnTheWay = new ArrayList<>();
+		if(destinations.size() == 0 && this.direction == direction.UP) {
+			weCanTakeThemOnTheWay = WeCanTakeThemOnTheWay();
+			System.out.println("\n\n" + this.time + "   " + destinations +"\n");
+		}
+
+
 		int indexOfCurrentFloor = this.currentFloor-1;
 		if(!peopleByFloor.get(indexOfCurrentFloor).isEmpty()) {
 			List<Integer> intermediateDestinations = findDestinationFloors(peopleByFloor.get(indexOfCurrentFloor));
-			List<Integer> additionnaFloors = weCanTakeThem(intermediateDestinations, indexOfCurrentFloor);
+			List<Integer> additionnaFloors = weCanTakeThemOnStop(intermediateDestinations, indexOfCurrentFloor);
 			destinations.addAll(destinations.size(), additionnaFloors);
+			destinations.addAll(weCanTakeThemOnTheWay);
 			if (signFromDirection == 1)
 				destinations.sort(Comparator.naturalOrder());
 			else
 				destinations.sort(Comparator.reverseOrder());
-			}
+		}
 		
 		
+
 		this.people.removeAll(people);
 	}
 

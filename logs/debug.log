@@ -19,8 +19,8 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 Start time = 06:00
-End time = 08:00
-End of day = 09:00
+End time = 07:45
+End of day = 08:45
 
 [06:00] Starting at floor 1
 
@@ -1518,7 +1518,7 @@ People waiting on floor 10
 [07:27:54] Person unloaded [Edward arrived at 07:22:12 going to 10] at floor 10
 [07:27:54] Person unloaded [Amy arrived at 07:22:30 going to 10] at floor 10
 [07:27:54] Person unloaded [Bryan arrived at 07:23:12 going to 10] at floor 10
-[07:27:54] Elevator decides to go to floor [8, 2]
+[07:27:54] Elevator decides to go to floor [8, 7, 6, 2]
 
 [07:28] Linda calls the elevator from floor 1 to go to floor 3
 Waiting list is now:
@@ -1585,8 +1585,8 @@ People waiting on floor 10
 	No one
 [07:28:39] Door opened at floor 8
 [07:28:48] Person unloaded [Helen arrived at 07:20:39 going to 8] at floor 8
-[07:28:48] Elevator decides to go to floor [2]
-[07:28:48] Going DOWN to floor 2, arrival in 45s
+[07:28:48] Elevator decides to go to floor [7, 6, 2]
+[07:28:48] Going DOWN to floor 7, arrival in 18s
 
 [07:29] George calls the elevator from floor 1 to go to floor 7
 Waiting list is now:
@@ -1619,6 +1619,13 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
+[07:29:06] Arrived at floor 7
+[07:29:09] Door opened at floor 7
+
+[07:29:09] Standby at floor 7
+[07:29:21] Person loaded [Steven arrived at 07:24:12 going to 2] at floor 7
+[07:29:24] Door closed at floor 7, going to floor 7
+
 [07:29:30] Kyle calls the elevator from floor 8 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
@@ -1642,19 +1649,13 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 People waiting on floor 9
 	No one
 People waiting on floor 10
 	No one
-
-[07:29:33] Arrived at floor 2
-[07:29:36] Door opened at floor 2
-[07:29:45] Person unloaded [Richard arrived at 07:21:54 going to 2] at floor 2
-[07:29:45] Elevator decides to go to floor [1]
-[07:29:45] Going DOWN to floor 1, arrival in 18s
 
 [07:29:51] Sophia calls the elevator from floor 1 to go to floor 3
 Waiting list is now:
@@ -1680,7 +1681,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 People waiting on floor 9
@@ -1688,28 +1689,18 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:30:03] Arrived at floor 1
-[07:30:06] Door opened at floor 1
-[07:30:06] Elevator decides to go to floor [2, 3, 5, 6, 7]
-[07:30:06] Going UP to floor 2 from floor 1
-[07:30:15] Person loaded [Douglas arrived at 07:25:09 going to 7] at floor 1
-[07:30:15] Person loaded [Jean arrived at 07:25:30 going to 6] at floor 1
-[07:30:15] Person loaded [Christopher arrived at 07:25:45 going to 6] at floor 1
-[07:30:15] Person loaded [Nicholas arrived at 07:26:21 going to 5] at floor 1
-[07:30:15] Person loaded [Matthew arrived at 07:27 going to 2] at floor 1
-[07:30:15] Person loaded [Linda arrived at 07:28 going to 3] at floor 1
-[07:30:15] Person loaded [Ronald arrived at 07:28:36 going to 3] at floor 1
-[07:30:15] Person loaded [George arrived at 07:29 going to 7] at floor 1
-[07:30:15] Person loaded [Sophia arrived at 07:29:51 going to 3] at floor 1
-[07:30:18] Door closed at floor 1, going to floor 2
-
-[07:30:36] Arrived at floor 2
-[07:30:39] Door opened at floor 2
-
 [07:30:39] George calls the elevator from floor 8 to go to floor 2
 Waiting list is now:
 People waiting on floor 1
-	No one
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 People waiting on floor 2
 	No one
 People waiting on floor 3
@@ -1722,7 +1713,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1730,14 +1721,19 @@ People waiting on floor 9
 	No one
 People waiting on floor 10
 	No one
-[07:30:48] Person unloaded [Matthew arrived at 07:27 going to 2] at floor 2
-[07:30:48] Elevator decides to go to floor [3, 5, 6, 7]
-[07:30:48] Going UP to floor 3, arrival in 18s
 
 [07:30:51] Brittany calls the elevator from floor 9 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
-	No one
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 People waiting on floor 2
 	No one
 People waiting on floor 3
@@ -1750,7 +1746,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1759,17 +1755,18 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:31:06] Arrived at floor 3
-[07:31:09] Door opened at floor 3
-[07:31:18] Person unloaded [Linda arrived at 07:28 going to 3] at floor 3
-[07:31:18] Person unloaded [Ronald arrived at 07:28:36 going to 3] at floor 3
-[07:31:18] Person unloaded [Sophia arrived at 07:29:51 going to 3] at floor 3
-[07:31:18] Elevator decides to go to floor [5, 6, 7]
-[07:31:18] Going UP to floor 5, arrival in 42s
-
 [07:31:48] Jeffrey calls the elevator from floor 1 to go to floor 8
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 People waiting on floor 2
 	No one
@@ -1783,7 +1780,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1792,15 +1789,18 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:32] Arrived at floor 5
-[07:32:03] Door opened at floor 5
-[07:32:12] Person unloaded [Nicholas arrived at 07:26:21 going to 5] at floor 5
-[07:32:12] Elevator decides to go to floor [6, 7]
-[07:32:12] Going UP to floor 6, arrival in 18s
-
 [07:32:15] Hannah calls the elevator from floor 1 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 	Hannah arrived at 07:32:15 going to 10
 People waiting on floor 2
@@ -1815,7 +1815,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1827,6 +1827,15 @@ People waiting on floor 10
 [07:32:18] Christopher calls the elevator from floor 1 to go to floor 9
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 	Hannah arrived at 07:32:15 going to 10
 	Christopher arrived at 07:32:18 going to 9
@@ -1842,7 +1851,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1854,6 +1863,15 @@ People waiting on floor 10
 [07:32:27] Lisa calls the elevator from floor 1 to go to floor 5
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 	Hannah arrived at 07:32:15 going to 10
 	Christopher arrived at 07:32:18 going to 9
@@ -1870,7 +1888,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1879,11 +1897,18 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:32:30] Arrived at floor 6
-
 [07:32:30] Steven calls the elevator from floor 3 to go to floor 2
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 	Hannah arrived at 07:32:15 going to 10
 	Christopher arrived at 07:32:18 going to 9
@@ -1900,7 +1925,7 @@ People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
 	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1908,16 +1933,19 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
 	No one
-[07:32:33] Door opened at floor 6
-[07:32:42] Person unloaded [Jean arrived at 07:25:30 going to 6] at floor 6
-[07:32:42] Person unloaded [Christopher arrived at 07:25:45 going to 6] at floor 6
-[07:32:42] Elevator decides to go to floor [7]
-[07:32:51] Person loaded [Billy arrived at 07:27:21 going to 7] at floor 6
-[07:32:54] Door closed at floor 6, going to floor 7
 
 [07:32:54] Jeffrey calls the elevator from floor 5 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
 	Jeffrey arrived at 07:31:48 going to 8
 	Hannah arrived at 07:32:15 going to 10
 	Christopher arrived at 07:32:18 going to 9
@@ -1932,8 +1960,9 @@ People waiting on floor 5
 	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1942,27 +1971,22 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:33:12] Arrived at floor 7
-[07:33:15] Door opened at floor 7
-[07:33:24] Person unloaded [Douglas arrived at 07:25:09 going to 7] at floor 7
-[07:33:24] Person unloaded [George arrived at 07:29 going to 7] at floor 7
-[07:33:24] Person unloaded [Billy arrived at 07:27:21 going to 7] at floor 7
-[07:33:24] Elevator decides to go to floor [1]
-[07:33:24] Going DOWN to floor 1, arrival in 45s
-
-[07:34:09] Arrived at floor 1
-[07:34:12] Door opened at floor 1
-[07:34:12] Elevator decides to go to floor [5, 8, 9, 10]
-[07:34:12] Going UP to floor 5 from floor 1
-[07:34:21] Person loaded [Jeffrey arrived at 07:31:48 going to 8] at floor 1
-[07:34:21] Person loaded [Hannah arrived at 07:32:15 going to 10] at floor 1
-[07:34:21] Person loaded [Christopher arrived at 07:32:18 going to 9] at floor 1
-[07:34:21] Person loaded [Lisa arrived at 07:32:27 going to 5] at floor 1
-[07:34:24] Door closed at floor 1, going to floor 5
-
 [07:35] Maria calls the elevator from floor 1 to go to floor 8
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 People waiting on floor 2
 	No one
@@ -1974,8 +1998,9 @@ People waiting on floor 5
 	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -1987,6 +2012,19 @@ People waiting on floor 10
 [07:35:03] Walter calls the elevator from floor 1 to go to floor 7
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 People waiting on floor 2
@@ -1999,8 +2037,9 @@ People waiting on floor 5
 	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2009,16 +2048,22 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:35:21] Arrived at floor 5
-[07:35:24] Door opened at floor 5
-[07:35:33] Person unloaded [Lisa arrived at 07:32:27 going to 5] at floor 5
-[07:35:33] Elevator decides to go to floor [8, 9, 10]
-[07:35:42] Person loaded [Jeffrey arrived at 07:32:54 going to 10] at floor 5
-[07:35:45] Door closed at floor 5, going to floor 8
-
 [07:35:48] Samuel calls the elevator from floor 1 to go to floor 3
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2029,11 +2074,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2045,6 +2091,19 @@ People waiting on floor 10
 [07:35:51] Jacob calls the elevator from floor 1 to go to floor 2
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2056,11 +2115,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2072,6 +2132,19 @@ People waiting on floor 10
 [07:36:03] Walter calls the elevator from floor 1 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2084,11 +2157,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2100,6 +2174,19 @@ People waiting on floor 10
 [07:36:24] Christian calls the elevator from floor 1 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2113,11 +2200,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2126,11 +2214,22 @@ People waiting on floor 9
 People waiting on floor 10
 	No one
 
-[07:36:33] Arrived at floor 8
-
 [07:36:33] Joyce calls the elevator from floor 10 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2144,11 +2243,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2156,11 +2256,23 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
 	Joyce arrived at 07:36:33 going to 4
-[07:36:36] Door opened at floor 8
 
 [07:36:39] Doris calls the elevator from floor 1 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2175,11 +2287,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2187,13 +2300,23 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
 	Joyce arrived at 07:36:33 going to 4
-[07:36:45] Person unloaded [Jeffrey arrived at 07:31:48 going to 8] at floor 8
-[07:36:45] Elevator decides to go to floor [9, 10]
-[07:36:45] Going UP to floor 9, arrival in 18s
 
 [07:36:54] Mark calls the elevator from floor 3 to go to floor 7
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2209,11 +2332,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2222,15 +2346,22 @@ People waiting on floor 9
 People waiting on floor 10
 	Joyce arrived at 07:36:33 going to 4
 
-[07:37:03] Arrived at floor 9
-[07:37:06] Door opened at floor 9
-[07:37:15] Person unloaded [Christopher arrived at 07:32:18 going to 9] at floor 9
-[07:37:15] Elevator decides to go to floor [10]
-[07:37:15] Going UP to floor 10, arrival in 18s
-
 [07:37:30] Kelly calls the elevator from floor 1 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2247,11 +2378,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2260,12 +2392,22 @@ People waiting on floor 9
 People waiting on floor 10
 	Joyce arrived at 07:36:33 going to 4
 
-[07:37:33] Arrived at floor 10
-[07:37:36] Door opened at floor 10
-
 [07:37:39] Gabriel calls the elevator from floor 1 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2283,11 +2425,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2299,6 +2442,19 @@ People waiting on floor 10
 [07:37:42] Stephen calls the elevator from floor 1 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2317,11 +2473,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2329,13 +2486,23 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
 	Joyce arrived at 07:36:33 going to 4
-[07:37:45] Person unloaded [Hannah arrived at 07:32:15 going to 10] at floor 10
-[07:37:45] Person unloaded [Jeffrey arrived at 07:32:54 going to 10] at floor 10
-[07:37:45] Elevator decides to go to floor [4]
 
 [07:37:51] Julia calls the elevator from floor 8 to go to floor 1
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2354,11 +2521,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2366,12 +2534,24 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:37:54] Person loaded [Joyce arrived at 07:36:33 going to 4] at floor 10
+	Joyce arrived at 07:36:33 going to 4
 
 [07:37:54] Doris calls the elevator from floor 1 to go to floor 8
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2391,11 +2571,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2403,12 +2584,24 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:37:57] Door closed at floor 10, going to floor 4
+	Joyce arrived at 07:36:33 going to 4
 
 [07:38:12] Diane calls the elevator from floor 1 to go to floor 7
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2429,11 +2622,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2441,14 +2635,24 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-
-[07:38:42] Arrived at floor 4
-[07:38:45] Door opened at floor 4
+	Joyce arrived at 07:36:33 going to 4
 
 [07:38:48] Christina calls the elevator from floor 2 to go to floor 9
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2469,11 +2673,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2481,14 +2686,24 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:38:54] Person unloaded [Joyce arrived at 07:36:33 going to 4] at floor 4
-[07:38:54] Elevator decides to go to floor [1]
-[07:38:54] Going DOWN to floor 1, arrival in 36s
+	Joyce arrived at 07:36:33 going to 4
 
 [07:39:15] Angela calls the elevator from floor 1 to go to floor 9
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2510,11 +2725,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2522,11 +2738,24 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
+	Joyce arrived at 07:36:33 going to 4
 
 [07:39:24] Matthew calls the elevator from floor 1 to go to floor 2
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
 	Maria arrived at 07:35 going to 8
 	Walter arrived at 07:35:03 going to 7
 	Samuel arrived at 07:35:48 going to 3
@@ -2549,11 +2778,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2561,16 +2791,38 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-
-[07:39:30] Arrived at floor 1
-[07:39:33] Door opened at floor 1
-[07:39:33] Elevator decides to go to floor [2, 3, 4, 6, 7, 8, 9, 10]
-[07:39:33] Going UP to floor 2 from floor 1
+	Joyce arrived at 07:36:33 going to 4
 
 [07:39:36] Marie calls the elevator from floor 1 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
 	Marie arrived at 07:39:36 going to 10
 People waiting on floor 2
 	Christina arrived at 07:38:48 going to 9
@@ -2580,11 +2832,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2592,25 +2845,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:39:42] Person loaded [Maria arrived at 07:35 going to 8] at floor 1
-[07:39:42] Person loaded [Walter arrived at 07:35:03 going to 7] at floor 1
-[07:39:42] Person loaded [Samuel arrived at 07:35:48 going to 3] at floor 1
-[07:39:42] Person loaded [Jacob arrived at 07:35:51 going to 2] at floor 1
-[07:39:42] Person loaded [Walter arrived at 07:36:03 going to 6] at floor 1
-[07:39:42] Person loaded [Christian arrived at 07:36:24 going to 6] at floor 1
-[07:39:42] Person loaded [Doris arrived at 07:36:39 going to 10] at floor 1
-[07:39:42] Person loaded [Kelly arrived at 07:37:30 going to 10] at floor 1
-[07:39:42] Person loaded [Gabriel arrived at 07:37:39 going to 6] at floor 1
-[07:39:42] Person loaded [Stephen arrived at 07:37:42 going to 4] at floor 1
-[07:39:42] Person loaded [Doris arrived at 07:37:54 going to 8] at floor 1
-[07:39:42] Person loaded [Diane arrived at 07:38:12 going to 7] at floor 1
-[07:39:42] Person loaded [Angela arrived at 07:39:15 going to 9] at floor 1
-[07:39:42] Person loaded [Matthew arrived at 07:39:24 going to 2] at floor 1
+	Joyce arrived at 07:36:33 going to 4
 
 [07:39:45] Noah calls the elevator from floor 1 to go to floor 3
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 People waiting on floor 2
 	Christina arrived at 07:38:48 going to 9
@@ -2620,11 +2887,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2632,13 +2900,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:39:48] Person loaded [Marie arrived at 07:39:36 going to 10] at floor 1
-[07:39:51] Door closed at floor 1, going to floor 2
+	Joyce arrived at 07:36:33 going to 4
 
 [07:39:57] Dennis calls the elevator from floor 8 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 People waiting on floor 2
 	Christina arrived at 07:38:48 going to 9
@@ -2648,11 +2942,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2661,14 +2956,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-
-[07:40:09] Arrived at floor 2
-[07:40:12] Door opened at floor 2
+	Joyce arrived at 07:36:33 going to 4
 
 [07:40:15] Albert calls the elevator from floor 1 to go to floor 7
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 People waiting on floor 2
@@ -2679,11 +2999,12 @@ People waiting on floor 3
 People waiting on floor 4
 	No one
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2692,31 +3013,55 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:40:21] Person unloaded [Jacob arrived at 07:35:51 going to 2] at floor 2
-[07:40:21] Person unloaded [Matthew arrived at 07:39:24 going to 2] at floor 2
-[07:40:21] Elevator decides to go to floor [3, 4, 6, 7, 8, 9, 10]
-[07:40:30] Person loaded [Christina arrived at 07:38:48 going to 9] at floor 2
-[07:40:33] Door closed at floor 2, going to floor 3
+	Joyce arrived at 07:36:33 going to 4
 
 [07:40:33] Sandra calls the elevator from floor 4 to go to floor 10
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
 	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
 	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2725,27 +3070,56 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
+	Joyce arrived at 07:36:33 going to 4
 
 [07:40:36] Christine calls the elevator from floor 1 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
 	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
 	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2754,31 +3128,57 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-
-[07:40:51] Arrived at floor 3
-[07:40:54] Door opened at floor 3
+	Joyce arrived at 07:36:33 going to 4
 
 [07:40:54] Natalie calls the elevator from floor 1 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
 	Natalie arrived at 07:40:54 going to 4
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
 	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
 	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2787,29 +3187,58 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
+	Joyce arrived at 07:36:33 going to 4
 
 [07:40:57] Sophia calls the elevator from floor 1 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
 	Natalie arrived at 07:40:54 going to 4
 	Sophia arrived at 07:40:57 going to 6
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
 	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
 	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2818,15 +3247,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-[07:41:03] Person unloaded [Samuel arrived at 07:35:48 going to 3] at floor 3
-[07:41:03] Elevator decides to go to floor [4, 6, 7, 8, 9, 10]
-[07:41:12] Person loaded [Mark arrived at 07:36:54 going to 7] at floor 3
-[07:41:15] Door closed at floor 3, going to floor 4
+	Joyce arrived at 07:36:33 going to 4
 
 [07:41:18] Adam calls the elevator from floor 1 to go to floor 5
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -2834,17 +3287,19 @@ People waiting on floor 1
 	Sophia arrived at 07:40:57 going to 6
 	Adam arrived at 07:41:18 going to 5
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
 	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2853,18 +3308,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
-
-[07:41:33] Arrived at floor 4
-[07:41:36] Door opened at floor 4
-[07:41:45] Person unloaded [Stephen arrived at 07:37:42 going to 4] at floor 4
-[07:41:45] Elevator decides to go to floor [6, 7, 8, 9, 10]
-[07:41:54] Person loaded [Sandra arrived at 07:40:33 going to 10] at floor 4
-[07:41:57] Door closed at floor 4, going to floor 6
+	Joyce arrived at 07:36:33 going to 4
 
 [07:42:12] Julie calls the elevator from floor 1 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -2873,17 +3349,19 @@ People waiting on floor 1
 	Adam arrived at 07:41:18 going to 5
 	Julie arrived at 07:42:12 going to 6
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2892,11 +3370,39 @@ People waiting on floor 8
 People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 People waiting on floor 10
-	No one
+	Joyce arrived at 07:36:33 going to 4
 
 [07:42:36] Marie calls the elevator from floor 9 to go to floor 4
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -2905,17 +3411,19 @@ People waiting on floor 1
 	Adam arrived at 07:41:18 going to 5
 	Julie arrived at 07:42:12 going to 6
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2925,27 +3433,39 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 	Marie arrived at 07:42:36 going to 4
 People waiting on floor 10
-	No one
-
-[07:42:39] Arrived at floor 6
-[07:42:42] Door opened at floor 6
-[07:42:51] Person unloaded [Walter arrived at 07:36:03 going to 6] at floor 6
-[07:42:51] Person unloaded [Christian arrived at 07:36:24 going to 6] at floor 6
-[07:42:51] Person unloaded [Gabriel arrived at 07:37:39 going to 6] at floor 6
-[07:42:51] Elevator decides to go to floor [7, 8, 9, 10]
-[07:42:51] Going UP to floor 7, arrival in 18s
-
-[07:43:09] Arrived at floor 7
-[07:43:12] Door opened at floor 7
-[07:43:21] Person unloaded [Walter arrived at 07:35:03 going to 7] at floor 7
-[07:43:21] Person unloaded [Diane arrived at 07:38:12 going to 7] at floor 7
-[07:43:21] Person unloaded [Mark arrived at 07:36:54 going to 7] at floor 7
-[07:43:21] Elevator decides to go to floor [8, 9, 10]
-[07:43:21] Going UP to floor 8, arrival in 18s
+	Joyce arrived at 07:36:33 going to 4
 
 [07:43:36] Joseph calls the elevator from floor 1 to go to floor 5
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -2955,17 +3475,19 @@ People waiting on floor 1
 	Julie arrived at 07:42:12 going to 6
 	Joseph arrived at 07:43:36 going to 5
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
+	No one
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
 	George arrived at 07:30:39 going to 2
@@ -2975,18 +3497,39 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 	Marie arrived at 07:42:36 going to 4
 People waiting on floor 10
-	No one
-
-[07:43:39] Arrived at floor 8
-[07:43:42] Door opened at floor 8
-[07:43:51] Person unloaded [Maria arrived at 07:35 going to 8] at floor 8
-[07:43:51] Person unloaded [Doris arrived at 07:37:54 going to 8] at floor 8
-[07:43:51] Elevator decides to go to floor [9, 10]
-[07:43:51] Going UP to floor 9, arrival in 18s
+	Joyce arrived at 07:36:33 going to 4
 
 [07:44:03] Harold calls the elevator from floor 7 to go to floor 6
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -2996,17 +3539,18 @@ People waiting on floor 1
 	Julie arrived at 07:42:12 going to 6
 	Joseph arrived at 07:43:36 going to 5
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
 	Harold arrived at 07:44:03 going to 6
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
@@ -3017,18 +3561,39 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 	Marie arrived at 07:42:36 going to 4
 People waiting on floor 10
-	No one
-
-[07:44:09] Arrived at floor 9
-[07:44:12] Door opened at floor 9
-[07:44:21] Person unloaded [Angela arrived at 07:39:15 going to 9] at floor 9
-[07:44:21] Person unloaded [Christina arrived at 07:38:48 going to 9] at floor 9
-[07:44:21] Elevator decides to go to floor [10]
-[07:44:21] Going UP to floor 10, arrival in 18s
+	Joyce arrived at 07:36:33 going to 4
 
 [07:44:33] Timothy calls the elevator from floor 1 to go to floor 8
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -3039,17 +3604,18 @@ People waiting on floor 1
 	Joseph arrived at 07:43:36 going to 5
 	Timothy arrived at 07:44:33 going to 8
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
 	Harold arrived at 07:44:03 going to 6
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
@@ -3060,14 +3626,39 @@ People waiting on floor 9
 	Brittany arrived at 07:30:51 going to 4
 	Marie arrived at 07:42:36 going to 4
 People waiting on floor 10
-	No one
-
-[07:44:39] Arrived at floor 10
-[07:44:42] Door opened at floor 10
+	Joyce arrived at 07:36:33 going to 4
 
 [07:44:45] Janet calls the elevator from floor 9 to go to floor 5
 Waiting list is now:
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -3078,17 +3669,18 @@ People waiting on floor 1
 	Joseph arrived at 07:43:36 going to 5
 	Timothy arrived at 07:44:33 going to 8
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
 	Harold arrived at 07:44:03 going to 6
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
@@ -3100,17 +3692,38 @@ People waiting on floor 9
 	Marie arrived at 07:42:36 going to 4
 	Janet arrived at 07:44:45 going to 5
 People waiting on floor 10
-	No one
-[07:44:51] Person unloaded [Doris arrived at 07:36:39 going to 10] at floor 10
-[07:44:51] Person unloaded [Kelly arrived at 07:37:30 going to 10] at floor 10
-[07:44:51] Person unloaded [Marie arrived at 07:39:36 going to 10] at floor 10
-[07:44:57] Person unloaded [Sandra arrived at 07:40:33 going to 10] at floor 10
-[07:44:57] Elevator decides to go to floor [1]
-[07:44:57] Going DOWN to floor 1, arrival in 54s
+	Joyce arrived at 07:36:33 going to 4
 
-[07:45:21] Walter calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
+[07:45]No more people are coming.
 People waiting on floor 1
+	Douglas arrived at 07:25:09 going to 7
+	Jean arrived at 07:25:30 going to 6
+	Christopher arrived at 07:25:45 going to 6
+	Nicholas arrived at 07:26:21 going to 5
+	Matthew arrived at 07:27 going to 2
+	Linda arrived at 07:28 going to 3
+	Ronald arrived at 07:28:36 going to 3
+	George arrived at 07:29 going to 7
+	Sophia arrived at 07:29:51 going to 3
+	Jeffrey arrived at 07:31:48 going to 8
+	Hannah arrived at 07:32:15 going to 10
+	Christopher arrived at 07:32:18 going to 9
+	Lisa arrived at 07:32:27 going to 5
+	Maria arrived at 07:35 going to 8
+	Walter arrived at 07:35:03 going to 7
+	Samuel arrived at 07:35:48 going to 3
+	Jacob arrived at 07:35:51 going to 2
+	Walter arrived at 07:36:03 going to 6
+	Christian arrived at 07:36:24 going to 6
+	Doris arrived at 07:36:39 going to 10
+	Kelly arrived at 07:37:30 going to 10
+	Gabriel arrived at 07:37:39 going to 6
+	Stephen arrived at 07:37:42 going to 4
+	Doris arrived at 07:37:54 going to 8
+	Diane arrived at 07:38:12 going to 7
+	Angela arrived at 07:39:15 going to 9
+	Matthew arrived at 07:39:24 going to 2
+	Marie arrived at 07:39:36 going to 10
 	Noah arrived at 07:39:45 going to 3
 	Albert arrived at 07:40:15 going to 7
 	Christine arrived at 07:40:36 going to 4
@@ -3120,19 +3733,19 @@ People waiting on floor 1
 	Julie arrived at 07:42:12 going to 6
 	Joseph arrived at 07:43:36 going to 5
 	Timothy arrived at 07:44:33 going to 8
-	Walter arrived at 07:45:21 going to 10
 People waiting on floor 2
-	No one
+	Christina arrived at 07:38:48 going to 9
 People waiting on floor 3
 	Steven arrived at 07:32:30 going to 2
+	Mark arrived at 07:36:54 going to 7
 People waiting on floor 4
-	No one
+	Sandra arrived at 07:40:33 going to 10
 People waiting on floor 5
-	No one
+	Jeffrey arrived at 07:32:54 going to 10
 People waiting on floor 6
 	Julie arrived at 07:22:48 going to 1
+	Billy arrived at 07:27:21 going to 7
 People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
 	Harold arrived at 07:44:03 going to 6
 People waiting on floor 8
 	Kyle arrived at 07:29:30 going to 4
@@ -3144,2472 +3757,21 @@ People waiting on floor 9
 	Marie arrived at 07:42:36 going to 4
 	Janet arrived at 07:44:45 going to 5
 People waiting on floor 10
-	No one
-
-[07:45:24] Anthony calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Noah arrived at 07:39:45 going to 3
-	Albert arrived at 07:40:15 going to 7
-	Christine arrived at 07:40:36 going to 4
-	Natalie arrived at 07:40:54 going to 4
-	Sophia arrived at 07:40:57 going to 6
-	Adam arrived at 07:41:18 going to 5
-	Julie arrived at 07:42:12 going to 6
-	Joseph arrived at 07:43:36 going to 5
-	Timothy arrived at 07:44:33 going to 8
-	Walter arrived at 07:45:21 going to 10
-	Anthony arrived at 07:45:24 going to 2
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
+	Joyce arrived at 07:36:33 going to 4
+Elevator stopped at floor 7 with the following people
+	Richard arrived at 07:21:54 going to 2
 	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:45:39] Diana calls the elevator from floor 3 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Noah arrived at 07:39:45 going to 3
-	Albert arrived at 07:40:15 going to 7
-	Christine arrived at 07:40:36 going to 4
-	Natalie arrived at 07:40:54 going to 4
-	Sophia arrived at 07:40:57 going to 6
-	Adam arrived at 07:41:18 going to 5
-	Julie arrived at 07:42:12 going to 6
-	Joseph arrived at 07:43:36 going to 5
-	Timothy arrived at 07:44:33 going to 8
-	Walter arrived at 07:45:21 going to 10
-	Anthony arrived at 07:45:24 going to 2
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:45:51] Arrived at floor 1
-
-[07:45:51] Bruce calls the elevator from floor 1 to go to floor 4
-Waiting list is now:
-People waiting on floor 1
-	Noah arrived at 07:39:45 going to 3
-	Albert arrived at 07:40:15 going to 7
-	Christine arrived at 07:40:36 going to 4
-	Natalie arrived at 07:40:54 going to 4
-	Sophia arrived at 07:40:57 going to 6
-	Adam arrived at 07:41:18 going to 5
-	Julie arrived at 07:42:12 going to 6
-	Joseph arrived at 07:43:36 going to 5
-	Timothy arrived at 07:44:33 going to 8
-	Walter arrived at 07:45:21 going to 10
-	Anthony arrived at 07:45:24 going to 2
-	Bruce arrived at 07:45:51 going to 4
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:45:54] Door opened at floor 1
-[07:45:54] Elevator decides to go to floor [2, 3, 4, 5, 6, 7, 8, 10]
-[07:45:54] Going UP to floor 2 from floor 1
-[07:46:03] Person loaded [Noah arrived at 07:39:45 going to 3] at floor 1
-[07:46:03] Person loaded [Albert arrived at 07:40:15 going to 7] at floor 1
-[07:46:03] Person loaded [Christine arrived at 07:40:36 going to 4] at floor 1
-[07:46:03] Person loaded [Natalie arrived at 07:40:54 going to 4] at floor 1
-[07:46:03] Person loaded [Sophia arrived at 07:40:57 going to 6] at floor 1
-[07:46:03] Person loaded [Adam arrived at 07:41:18 going to 5] at floor 1
-[07:46:03] Person loaded [Julie arrived at 07:42:12 going to 6] at floor 1
-[07:46:03] Person loaded [Joseph arrived at 07:43:36 going to 5] at floor 1
-[07:46:03] Person loaded [Timothy arrived at 07:44:33 going to 8] at floor 1
-[07:46:03] Person loaded [Walter arrived at 07:45:21 going to 10] at floor 1
-[07:46:03] Person loaded [Anthony arrived at 07:45:24 going to 2] at floor 1
-[07:46:03] Person loaded [Bruce arrived at 07:45:51 going to 4] at floor 1
-
-[07:46:03] Jennifer calls the elevator from floor 1 to go to floor 9
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:46:06] Door closed at floor 1, going to floor 2
-
-[07:46:09] Adam calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:46:18] Lisa calls the elevator from floor 1 to go to floor 9
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:46:21] Steven calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:46:24] Arrived at floor 2
-[07:46:27] Door opened at floor 2
-[07:46:36] Person unloaded [Anthony arrived at 07:45:24 going to 2] at floor 2
-[07:46:36] Elevator decides to go to floor [3, 4, 5, 6, 7, 8, 10]
-[07:46:36] Going UP to floor 3, arrival in 18s
-
-[07:46:54] Arrived at floor 3
-[07:46:57] Door opened at floor 3
-
-[07:47] Sharon calls the elevator from floor 5 to go to floor 9
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-	Diana arrived at 07:45:39 going to 8
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Sharon arrived at 07:47 going to 9
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:47:06] Person unloaded [Noah arrived at 07:39:45 going to 3] at floor 3
-[07:47:06] Elevator decides to go to floor [4, 5, 6, 7, 8, 10]
-[07:47:15] Person loaded [Diana arrived at 07:45:39 going to 8] at floor 3
-[07:47:18] Door closed at floor 3, going to floor 4
-
-[07:47:36] Arrived at floor 4
-[07:47:39] Door opened at floor 4
-
-[07:47:45] Jonathan calls the elevator from floor 1 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Sharon arrived at 07:47 going to 9
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:47:48] Person unloaded [Christine arrived at 07:40:36 going to 4] at floor 4
-[07:47:48] Person unloaded [Natalie arrived at 07:40:54 going to 4] at floor 4
-[07:47:48] Person unloaded [Bruce arrived at 07:45:51 going to 4] at floor 4
-[07:47:48] Elevator decides to go to floor [5, 6, 7, 8, 10]
-[07:47:48] Going UP to floor 5, arrival in 18s
-
-[07:48:06] Arrived at floor 5
-[07:48:09] Door opened at floor 5
-[07:48:18] Person unloaded [Adam arrived at 07:41:18 going to 5] at floor 5
-[07:48:18] Person unloaded [Joseph arrived at 07:43:36 going to 5] at floor 5
-[07:48:18] Elevator decides to go to floor [6, 7, 8, 9, 10]
-
-[07:48:21] Philip calls the elevator from floor 1 to go to floor 6
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:48:27] Person loaded [Sharon arrived at 07:47 going to 9] at floor 5
-
-[07:48:27] Lawrence calls the elevator from floor 1 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:48:30] Door closed at floor 5, going to floor 6
-
-[07:48:48] Arrived at floor 6
-[07:48:51] Door opened at floor 6
-
-[07:48:54] Abigail calls the elevator from floor 1 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:48:57] Jessica calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:49] Person unloaded [Sophia arrived at 07:40:57 going to 6] at floor 6
-[07:49] Person unloaded [Julie arrived at 07:42:12 going to 6] at floor 6
-[07:49] Elevator decides to go to floor [7, 8, 9, 10]
-[07:49] Going UP to floor 7, arrival in 18s
-
-[07:49:12] Lisa calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:49:18] Arrived at floor 7
-
-[07:49:18] Carolyn calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:49:21] Door opened at floor 7
-[07:49:30] Person unloaded [Albert arrived at 07:40:15 going to 7] at floor 7
-[07:49:30] Elevator decides to go to floor [8, 9, 10]
-[07:49:30] Going UP to floor 8, arrival in 18s
-
-[07:49:48] Arrived at floor 8
-[07:49:51] Door opened at floor 8
-
-[07:49:51] Grace calls the elevator from floor 1 to go to floor 5
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-[07:50] Person unloaded [Timothy arrived at 07:44:33 going to 8] at floor 8
-[07:50] Person unloaded [Diana arrived at 07:45:39 going to 8] at floor 8
-[07:50] Elevator decides to go to floor [9, 10]
-[07:50] Going UP to floor 9, arrival in 18s
-
-[07:50:15] Stephen calls the elevator from floor 1 to go to floor 6
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	No one
-
-[07:50:18] Arrived at floor 9
-[07:50:21] Door opened at floor 9
-[07:50:30] Person unloaded [Sharon arrived at 07:47 going to 9] at floor 9
-[07:50:30] Elevator decides to go to floor [10]
-[07:50:30] Going UP to floor 10, arrival in 18s
-
-[07:50:48] Arrived at floor 10
-[07:50:51] Door opened at floor 10
-[07:51] Person unloaded [Walter arrived at 07:45:21 going to 10] at floor 10
-[07:51] Elevator decides to go to floor [1]
-[07:51] Going DOWN to floor 1, arrival in 54s
-
-[07:51:06] Denise calls the elevator from floor 10 to go to floor 7
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:09] Adam calls the elevator from floor 1 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:18] Vincent calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-	Vincent arrived at 07:51:18 going to 2
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:36] Jane calls the elevator from floor 2 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-	Vincent arrived at 07:51:18 going to 2
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:45] Judy calls the elevator from floor 1 to go to floor 5
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-	Vincent arrived at 07:51:18 going to 2
-	Judy arrived at 07:51:45 going to 5
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:48] John calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-	Vincent arrived at 07:51:18 going to 2
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:51] Andrea calls the elevator from floor 1 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Jennifer arrived at 07:46:03 going to 9
-	Adam arrived at 07:46:09 going to 2
-	Lisa arrived at 07:46:18 going to 9
-	Steven arrived at 07:46:21 going to 10
-	Jonathan arrived at 07:47:45 going to 8
-	Philip arrived at 07:48:21 going to 6
-	Lawrence arrived at 07:48:27 going to 3
-	Abigail arrived at 07:48:54 going to 8
-	Jessica arrived at 07:48:57 going to 2
-	Lisa arrived at 07:49:12 going to 10
-	Carolyn arrived at 07:49:18 going to 10
-	Grace arrived at 07:49:51 going to 5
-	Stephen arrived at 07:50:15 going to 6
-	Adam arrived at 07:51:09 going to 8
-	Vincent arrived at 07:51:18 going to 2
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:51:54] Arrived at floor 1
-[07:51:57] Door opened at floor 1
-[07:51:57] Elevator decides to go to floor [2, 3, 5, 6, 8, 9, 10]
-[07:51:57] Going UP to floor 2 from floor 1
-[07:52:06] Person loaded [Jennifer arrived at 07:46:03 going to 9] at floor 1
-[07:52:06] Person loaded [Adam arrived at 07:46:09 going to 2] at floor 1
-[07:52:06] Person loaded [Lisa arrived at 07:46:18 going to 9] at floor 1
-[07:52:06] Person loaded [Steven arrived at 07:46:21 going to 10] at floor 1
-[07:52:06] Person loaded [Jonathan arrived at 07:47:45 going to 8] at floor 1
-[07:52:06] Person loaded [Philip arrived at 07:48:21 going to 6] at floor 1
-[07:52:06] Person loaded [Lawrence arrived at 07:48:27 going to 3] at floor 1
-[07:52:06] Person loaded [Abigail arrived at 07:48:54 going to 8] at floor 1
-[07:52:06] Person loaded [Jessica arrived at 07:48:57 going to 2] at floor 1
-[07:52:06] Person loaded [Lisa arrived at 07:49:12 going to 10] at floor 1
-[07:52:06] Person loaded [Carolyn arrived at 07:49:18 going to 10] at floor 1
-[07:52:06] Person loaded [Grace arrived at 07:49:51 going to 5] at floor 1
-[07:52:06] Person loaded [Stephen arrived at 07:50:15 going to 6] at floor 1
-[07:52:06] Person loaded [Adam arrived at 07:51:09 going to 8] at floor 1
-[07:52:06] Person loaded [Vincent arrived at 07:51:18 going to 2] at floor 1
-[07:52:09] Door closed at floor 1, going to floor 2
-
-[07:52:09] Austin calls the elevator from floor 5 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:52:12] Jeremy calls the elevator from floor 7 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:52:15] Julia calls the elevator from floor 1 to go to floor 4
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:52:27] Arrived at floor 2
-
-[07:52:27] Victoria calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-People waiting on floor 2
-	Jane arrived at 07:51:36 going to 10
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:52:30] Door opened at floor 2
-[07:52:39] Person unloaded [Adam arrived at 07:46:09 going to 2] at floor 2
-[07:52:39] Person unloaded [Jessica arrived at 07:48:57 going to 2] at floor 2
-[07:52:39] Person unloaded [Vincent arrived at 07:51:18 going to 2] at floor 2
-[07:52:39] Elevator decides to go to floor [3, 5, 6, 8, 9, 10]
-
-[07:52:39] Pamela calls the elevator from floor 5 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:52:48] Person loaded [Jane arrived at 07:51:36 going to 10] at floor 2
-[07:52:51] Door closed at floor 2, going to floor 3
-
-[07:53:06] Jose calls the elevator from floor 9 to go to floor 1
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:53:09] Arrived at floor 3
-
-[07:53:09] Judy calls the elevator from floor 1 to go to floor 9
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:53:12] Door opened at floor 3
-[07:53:21] Person unloaded [Lawrence arrived at 07:48:27 going to 3] at floor 3
-[07:53:21] Elevator decides to go to floor [5, 6, 8, 9, 10]
-[07:53:21] Going UP to floor 5, arrival in 42s
-
-[07:53:24] Paul calls the elevator from floor 5 to go to floor 7
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Paul arrived at 07:53:24 going to 7
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:53:45] Kelly calls the elevator from floor 1 to go to floor 6
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Paul arrived at 07:53:24 going to 7
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:53:51] Doris calls the elevator from floor 1 to go to floor 5
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Paul arrived at 07:53:24 going to 7
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:54] Sarah calls the elevator from floor 1 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Paul arrived at 07:53:24 going to 7
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:54:03] Arrived at floor 5
-[07:54:06] Door opened at floor 5
-
-[07:54:12] Kathryn calls the elevator from floor 1 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Paul arrived at 07:53:24 going to 7
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-	Jeremy arrived at 07:52:12 going to 10
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:54:15] Person unloaded [Grace arrived at 07:49:51 going to 5] at floor 5
-[07:54:15] Elevator decides to go to floor [6, 7, 8, 9, 10]
-[07:54:24] Person loaded [Paul arrived at 07:53:24 going to 7] at floor 5
-[07:54:27] Door closed at floor 5, going to floor 6
-
-[07:54:45] Arrived at floor 6
-[07:54:48] Door opened at floor 6
-[07:54:57] Person unloaded [Philip arrived at 07:48:21 going to 6] at floor 6
-[07:54:57] Person unloaded [Stephen arrived at 07:50:15 going to 6] at floor 6
-[07:54:57] Elevator decides to go to floor [7, 8, 9, 10]
-[07:54:57] Going UP to floor 7, arrival in 18s
-
-[07:55:15] Arrived at floor 7
-[07:55:18] Door opened at floor 7
-[07:55:27] Person unloaded [Paul arrived at 07:53:24 going to 7] at floor 7
-[07:55:27] Elevator decides to go to floor [8, 9, 10]
-[07:55:36] Person loaded [Jeremy arrived at 07:52:12 going to 10] at floor 7
-[07:55:39] Door closed at floor 7, going to floor 8
-
-[07:55:39] Janet calls the elevator from floor 6 to go to floor 7
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:55:45] Jordan calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:55:48] Robert calls the elevator from floor 9 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:55:57] Arrived at floor 8
-[07:56] Door opened at floor 8
-
-[07:56] Christopher calls the elevator from floor 2 to go to floor 4
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-
-[07:56:06] Timothy calls the elevator from floor 1 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:56:09] Person unloaded [Jonathan arrived at 07:47:45 going to 8] at floor 8
-[07:56:09] Person unloaded [Abigail arrived at 07:48:54 going to 8] at floor 8
-[07:56:09] Person unloaded [Adam arrived at 07:51:09 going to 8] at floor 8
-[07:56:09] Elevator decides to go to floor [9, 10]
-[07:56:09] Going UP to floor 9, arrival in 18s
-
-[07:56:27] Arrived at floor 9
-[07:56:30] Door opened at floor 9
-[07:56:39] Person unloaded [Jennifer arrived at 07:46:03 going to 9] at floor 9
-[07:56:39] Person unloaded [Lisa arrived at 07:46:18 going to 9] at floor 9
-[07:56:39] Elevator decides to go to floor [10]
-[07:56:39] Going UP to floor 10, arrival in 18s
-
-[07:56:57] Arrived at floor 10
-
-[07:56:57] Ashley calls the elevator from floor 1 to go to floor 6
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-	Ashley arrived at 07:56:57 going to 6
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:57] Door opened at floor 10
-[07:57:09] Person unloaded [Steven arrived at 07:46:21 going to 10] at floor 10
-[07:57:09] Person unloaded [Lisa arrived at 07:49:12 going to 10] at floor 10
-[07:57:09] Person unloaded [Carolyn arrived at 07:49:18 going to 10] at floor 10
-
-[07:57:09] Grace calls the elevator from floor 1 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-	Ashley arrived at 07:56:57 going to 6
-	Grace arrived at 07:57:09 going to 8
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	Denise arrived at 07:51:06 going to 7
-[07:57:15] Person unloaded [Jane arrived at 07:51:36 going to 10] at floor 10
-[07:57:15] Person unloaded [Jeremy arrived at 07:52:12 going to 10] at floor 10
-[07:57:15] Elevator decides to go to floor [7]
-[07:57:24] Person loaded [Denise arrived at 07:51:06 going to 7] at floor 10
-[07:57:27] Door closed at floor 10, going to floor 7
-
-[07:57:51] Victoria calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-	Ashley arrived at 07:56:57 going to 6
-	Grace arrived at 07:57:09 going to 8
-	Victoria arrived at 07:57:51 going to 10
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:58:03] Arrived at floor 7
-[07:58:06] Door opened at floor 7
-[07:58:15] Person unloaded [Denise arrived at 07:51:06 going to 7] at floor 7
-[07:58:15] Elevator decides to go to floor [1]
-[07:58:15] Going DOWN to floor 1, arrival in 45s
-
-[07:58:27] Alan calls the elevator from floor 6 to go to floor 2
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-	Ashley arrived at 07:56:57 going to 6
-	Grace arrived at 07:57:09 going to 8
-	Victoria arrived at 07:57:51 going to 10
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:58:51] Richard calls the elevator from floor 1 to go to floor 9
-Waiting list is now:
-People waiting on floor 1
-	Judy arrived at 07:51:45 going to 5
-	John arrived at 07:51:48 going to 2
-	Andrea arrived at 07:51:51 going to 2
-	Julia arrived at 07:52:15 going to 4
-	Victoria arrived at 07:52:27 going to 10
-	Judy arrived at 07:53:09 going to 9
-	Kelly arrived at 07:53:45 going to 6
-	Doris arrived at 07:53:51 going to 5
-	Sarah arrived at 07:54 going to 3
-	Kathryn arrived at 07:54:12 going to 3
-	Jordan arrived at 07:55:45 going to 10
-	Timothy arrived at 07:56:06 going to 3
-	Ashley arrived at 07:56:57 going to 6
-	Grace arrived at 07:57:09 going to 8
-	Victoria arrived at 07:57:51 going to 10
-	Richard arrived at 07:58:51 going to 9
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:59] Arrived at floor 1
-[07:59:03] Door opened at floor 1
-[07:59:03] Elevator decides to go to floor [2, 3, 4, 5, 6, 8, 9, 10]
-[07:59:03] Going UP to floor 2 from floor 1
-
-[07:59:03] Christine calls the elevator from floor 1 to go to floor 10
-Waiting list is now:
-People waiting on floor 1
-	Richard arrived at 07:58:51 going to 9
-	Christine arrived at 07:59:03 going to 10
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:59:06] Cheryl calls the elevator from floor 5 to go to floor 8
-Waiting list is now:
-People waiting on floor 1
-	Richard arrived at 07:58:51 going to 9
-	Christine arrived at 07:59:03 going to 10
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Cheryl arrived at 07:59:06 going to 8
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-[07:59:12] Person loaded [Judy arrived at 07:51:45 going to 5] at floor 1
-[07:59:12] Person loaded [John arrived at 07:51:48 going to 2] at floor 1
-[07:59:12] Person loaded [Andrea arrived at 07:51:51 going to 2] at floor 1
-[07:59:12] Person loaded [Julia arrived at 07:52:15 going to 4] at floor 1
-[07:59:12] Person loaded [Victoria arrived at 07:52:27 going to 10] at floor 1
-[07:59:12] Person loaded [Judy arrived at 07:53:09 going to 9] at floor 1
-[07:59:12] Person loaded [Kelly arrived at 07:53:45 going to 6] at floor 1
-[07:59:12] Person loaded [Doris arrived at 07:53:51 going to 5] at floor 1
-[07:59:12] Person loaded [Sarah arrived at 07:54 going to 3] at floor 1
-[07:59:12] Person loaded [Kathryn arrived at 07:54:12 going to 3] at floor 1
-[07:59:12] Person loaded [Jordan arrived at 07:55:45 going to 10] at floor 1
-[07:59:12] Person loaded [Timothy arrived at 07:56:06 going to 3] at floor 1
-[07:59:12] Person loaded [Ashley arrived at 07:56:57 going to 6] at floor 1
-[07:59:12] Person loaded [Grace arrived at 07:57:09 going to 8] at floor 1
-[07:59:12] Person loaded [Victoria arrived at 07:57:51 going to 10] at floor 1
-[07:59:15] Door closed at floor 1, going to floor 2
-
-[07:59:15] Theresa calls the elevator from floor 1 to go to floor 3
-Waiting list is now:
-People waiting on floor 1
-	Richard arrived at 07:58:51 going to 9
-	Christine arrived at 07:59:03 going to 10
-	Theresa arrived at 07:59:15 going to 3
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Cheryl arrived at 07:59:06 going to 8
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:59:21] Thomas calls the elevator from floor 1 to go to floor 7
-Waiting list is now:
-People waiting on floor 1
-	Richard arrived at 07:58:51 going to 9
-	Christine arrived at 07:59:03 going to 10
-	Theresa arrived at 07:59:15 going to 3
-	Thomas arrived at 07:59:21 going to 7
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Cheryl arrived at 07:59:06 going to 8
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:59:27] Helen calls the elevator from floor 1 to go to floor 6
-Waiting list is now:
-People waiting on floor 1
-	Richard arrived at 07:58:51 going to 9
-	Christine arrived at 07:59:03 going to 10
-	Theresa arrived at 07:59:15 going to 3
-	Thomas arrived at 07:59:21 going to 7
-	Helen arrived at 07:59:27 going to 6
-People waiting on floor 2
-	Christopher arrived at 07:56 going to 4
-People waiting on floor 3
-	Steven arrived at 07:32:30 going to 2
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	Austin arrived at 07:52:09 going to 3
-	Pamela arrived at 07:52:39 going to 2
-	Cheryl arrived at 07:59:06 going to 8
-People waiting on floor 6
-	Julie arrived at 07:22:48 going to 1
-	Janet arrived at 07:55:39 going to 7
-	Alan arrived at 07:58:27 going to 2
-People waiting on floor 7
-	Steven arrived at 07:24:12 going to 2
-	Harold arrived at 07:44:03 going to 6
-People waiting on floor 8
-	Kyle arrived at 07:29:30 going to 4
-	George arrived at 07:30:39 going to 2
-	Julia arrived at 07:37:51 going to 1
-	Dennis arrived at 07:39:57 going to 6
-People waiting on floor 9
-	Brittany arrived at 07:30:51 going to 4
-	Marie arrived at 07:42:36 going to 4
-	Janet arrived at 07:44:45 going to 5
-	Jose arrived at 07:53:06 going to 1
-	Robert arrived at 07:55:48 going to 2
-People waiting on floor 10
-	No one
-
-[07:59:33] Arrived at floor 2
-[07:59:36] Door opened at floor 2
-[07:59:45] Person unloaded [John arrived at 07:51:48 going to 2] at floor 2
-[07:59:45] Person unloaded [Andrea arrived at 07:51:51 going to 2] at floor 2
-[07:59:45] Elevator decides to go to floor [3, 4, 5, 6, 8, 9, 10]
-[07:59:54] Person loaded [Christopher arrived at 07:56 going to 4] at floor 2
-[07:59:57] Door closed at floor 2, going to floor 3
-
-[08:00]No more people are coming.
-
-[08:00:15] Arrived at floor 3
-[08:00:18] Door opened at floor 3
-[08:00:27] Person unloaded [Sarah arrived at 07:54 going to 3] at floor 3
-[08:00:27] Person unloaded [Kathryn arrived at 07:54:12 going to 3] at floor 3
-[08:00:27] Person unloaded [Timothy arrived at 07:56:06 going to 3] at floor 3
-[08:00:27] Elevator decides to go to floor [4, 5, 6, 8, 9, 10]
-[08:00:27] Going UP to floor 4, arrival in 18s
-
-[08:00:45] Arrived at floor 4
-[08:00:48] Door opened at floor 4
-[08:00:57] Person unloaded [Julia arrived at 07:52:15 going to 4] at floor 4
-[08:00:57] Person unloaded [Christopher arrived at 07:56 going to 4] at floor 4
-[08:00:57] Elevator decides to go to floor [5, 6, 8, 9, 10]
-[08:00:57] Going UP to floor 5, arrival in 18s
-
-[08:01:15] Arrived at floor 5
-[08:01:18] Door opened at floor 5
-[08:01:27] Person unloaded [Judy arrived at 07:51:45 going to 5] at floor 5
-[08:01:27] Person unloaded [Doris arrived at 07:53:51 going to 5] at floor 5
-[08:01:27] Elevator decides to go to floor [6, 8, 9, 10]
-[08:01:36] Person loaded [Cheryl arrived at 07:59:06 going to 8] at floor 5
-[08:01:39] Door closed at floor 5, going to floor 6
-
-[08:01:57] Arrived at floor 6
-[08:02] Door opened at floor 6
-[08:02:09] Person unloaded [Kelly arrived at 07:53:45 going to 6] at floor 6
-[08:02:09] Person unloaded [Ashley arrived at 07:56:57 going to 6] at floor 6
-[08:02:09] Elevator decides to go to floor [7, 8, 9, 10]
-[08:02:18] Person loaded [Janet arrived at 07:55:39 going to 7] at floor 6
-[08:02:21] Door closed at floor 6, going to floor 7
-
-[08:02:39] Arrived at floor 7
-[08:02:42] Door opened at floor 7
-[08:02:51] Person unloaded [Janet arrived at 07:55:39 going to 7] at floor 7
-[08:02:51] Elevator decides to go to floor [8, 9, 10]
-[08:02:51] Going UP to floor 8, arrival in 18s
-
-[08:03:09] Arrived at floor 8
-[08:03:12] Door opened at floor 8
-[08:03:21] Person unloaded [Grace arrived at 07:57:09 going to 8] at floor 8
-[08:03:21] Person unloaded [Cheryl arrived at 07:59:06 going to 8] at floor 8
-[08:03:21] Elevator decides to go to floor [9, 10]
-[08:03:21] Going UP to floor 9, arrival in 18s
-
-[08:03:39] Arrived at floor 9
-[08:03:42] Door opened at floor 9
-[08:03:51] Person unloaded [Judy arrived at 07:53:09 going to 9] at floor 9
-[08:03:51] Elevator decides to go to floor [10]
-[08:03:51] Going UP to floor 10, arrival in 18s
-
-[08:04:09] Arrived at floor 10
-[08:04:12] Door opened at floor 10
-[08:04:21] Person unloaded [Victoria arrived at 07:52:27 going to 10] at floor 10
-[08:04:21] Person unloaded [Jordan arrived at 07:55:45 going to 10] at floor 10
-[08:04:21] Person unloaded [Victoria arrived at 07:57:51 going to 10] at floor 10
-[08:04:21] Elevator decides to go to floor [1]
-[08:04:21] Going DOWN to floor 1, arrival in 54s
-
-[08:05:15] Arrived at floor 1
-[08:05:18] Door opened at floor 1
-[08:05:18] Elevator decides to go to floor [3, 6, 7, 9, 10]
-[08:05:18] Going UP to floor 3 from floor 1
-[08:05:27] Person loaded [Richard arrived at 07:58:51 going to 9] at floor 1
-[08:05:27] Person loaded [Christine arrived at 07:59:03 going to 10] at floor 1
-[08:05:27] Person loaded [Theresa arrived at 07:59:15 going to 3] at floor 1
-[08:05:27] Person loaded [Thomas arrived at 07:59:21 going to 7] at floor 1
-[08:05:27] Person loaded [Helen arrived at 07:59:27 going to 6] at floor 1
-[08:05:30] Door closed at floor 1, going to floor 3
-
-[08:06:12] Arrived at floor 3
-[08:06:15] Door opened at floor 3
-[08:06:24] Person unloaded [Theresa arrived at 07:59:15 going to 3] at floor 3
-[08:06:24] Elevator decides to go to floor [6, 7, 9, 10]
-[08:06:24] Going UP to floor 6, arrival in 48s
-
-[08:07:12] Arrived at floor 6
-[08:07:15] Door opened at floor 6
-[08:07:24] Person unloaded [Helen arrived at 07:59:27 going to 6] at floor 6
-[08:07:24] Elevator decides to go to floor [7, 9, 10]
-[08:07:24] Going UP to floor 7, arrival in 18s
-
-[08:07:42] Arrived at floor 7
-[08:07:45] Door opened at floor 7
-[08:07:54] Person unloaded [Thomas arrived at 07:59:21 going to 7] at floor 7
-[08:07:54] Elevator decides to go to floor [9, 10]
-[08:07:54] Going UP to floor 9, arrival in 42s
-
-[08:08:36] Arrived at floor 9
-[08:08:39] Door opened at floor 9
-[08:08:48] Person unloaded [Richard arrived at 07:58:51 going to 9] at floor 9
-[08:08:48] Elevator decides to go to floor [10]
-[08:08:48] Going UP to floor 10, arrival in 18s
-
-[08:09:06] Arrived at floor 10
-[08:09:09] Door opened at floor 10
-[08:09:18] Person unloaded [Christine arrived at 07:59:03 going to 10] at floor 10
-[08:09:18] Elevator decides to go to floor [3]
-[08:09:18] Going DOWN to floor 3, arrival in 48s
-
-[08:10:06] Arrived at floor 3
-[08:10:09] Door opened at floor 3
-[08:10:09] Elevator decides to go to floor [2]
-[08:10:09] Going DOWN to floor 2 from floor 3
-[08:10:18] Person loaded [Steven arrived at 07:32:30 going to 2] at floor 3
-[08:10:21] Door closed at floor 3, going to floor 2
-
-[08:10:39] Arrived at floor 2
-[08:10:42] Door opened at floor 2
-[08:10:51] Person unloaded [Steven arrived at 07:32:30 going to 2] at floor 2
-[08:10:51] Elevator decides to go to floor [5]
-[08:10:51] Going UP to floor 5, arrival in 48s
-
-[08:11:39] Arrived at floor 5
-[08:11:42] Door opened at floor 5
-[08:11:42] Elevator decides to go to floor [2, 3]
-[08:11:42] Going DOWN to floor 2 from floor 5
-[08:11:51] Person loaded [Austin arrived at 07:52:09 going to 3] at floor 5
-[08:11:51] Person loaded [Pamela arrived at 07:52:39 going to 2] at floor 5
-[08:11:54] Door closed at floor 5, going to floor 2
-
-[08:12:30] Arrived at floor 2
-[08:12:33] Door opened at floor 2
-[08:12:42] Person unloaded [Pamela arrived at 07:52:39 going to 2] at floor 2
-[08:12:42] Elevator decides to go to floor [3]
-[08:12:42] Going UP to floor 3, arrival in 18s
-
-[08:13] Arrived at floor 3
-[08:13:03] Door opened at floor 3
-[08:13:12] Person unloaded [Austin arrived at 07:52:09 going to 3] at floor 3
-[08:13:12] Elevator decides to go to floor [6]
-[08:13:12] Going UP to floor 6, arrival in 48s
-
-[08:14] Arrived at floor 6
-[08:14:03] Door opened at floor 6
-[08:14:03] Elevator decides to go to floor [1, 2]
-[08:14:03] Going DOWN to floor 1 from floor 6
-[08:14:12] Person loaded [Julie arrived at 07:22:48 going to 1] at floor 6
-[08:14:12] Person loaded [Alan arrived at 07:58:27 going to 2] at floor 6
-[08:14:15] Door closed at floor 6, going to floor 1
-
-[08:14:57] Arrived at floor 1
-[08:15] Door opened at floor 1
-[08:15:09] Person unloaded [Julie arrived at 07:22:48 going to 1] at floor 1
-[08:15:09] Elevator decides to go to floor [2]
-[08:15:09] Going UP to floor 2, arrival in 18s
-
-[08:15:27] Arrived at floor 2
-[08:15:30] Door opened at floor 2
-[08:15:39] Person unloaded [Alan arrived at 07:58:27 going to 2] at floor 2
-[08:15:39] Elevator decides to go to floor [7]
-[08:15:39] Going UP to floor 7, arrival in 60s
-
-[08:16:39] Arrived at floor 7
-[08:16:42] Door opened at floor 7
-[08:16:42] Elevator decides to go to floor [2, 6]
-[08:16:42] Going DOWN to floor 2 from floor 7
-[08:16:51] Person loaded [Steven arrived at 07:24:12 going to 2] at floor 7
-[08:16:51] Person loaded [Harold arrived at 07:44:03 going to 6] at floor 7
-[08:16:54] Door closed at floor 7, going to floor 2
-
-[08:17:36] Arrived at floor 2
-[08:17:39] Door opened at floor 2
-[08:17:48] Person unloaded [Steven arrived at 07:24:12 going to 2] at floor 2
-[08:17:48] Elevator decides to go to floor [6]
-[08:17:48] Going UP to floor 6, arrival in 57s
-
-[08:18:45] Arrived at floor 6
-[08:18:48] Door opened at floor 6
-[08:18:57] Person unloaded [Harold arrived at 07:44:03 going to 6] at floor 6
-[08:18:57] Elevator decides to go to floor [8]
-[08:18:57] Going UP to floor 8, arrival in 42s
-
-[08:19:39] Arrived at floor 8
-[08:19:42] Door opened at floor 8
-[08:19:42] Elevator decides to go to floor [1, 2, 4, 6]
-[08:19:42] Going DOWN to floor 1 from floor 8
-[08:19:51] Person loaded [Kyle arrived at 07:29:30 going to 4] at floor 8
-[08:19:51] Person loaded [George arrived at 07:30:39 going to 2] at floor 8
-[08:19:51] Person loaded [Julia arrived at 07:37:51 going to 1] at floor 8
-[08:19:51] Person loaded [Dennis arrived at 07:39:57 going to 6] at floor 8
-[08:19:54] Door closed at floor 8, going to floor 1
-
-[08:20:42] Arrived at floor 1
-[08:20:45] Door opened at floor 1
-[08:20:54] Person unloaded [Julia arrived at 07:37:51 going to 1] at floor 1
-[08:20:54] Elevator decides to go to floor [2, 4, 6]
-[08:20:54] Going UP to floor 2, arrival in 18s
-
-[08:21:12] Arrived at floor 2
-[08:21:15] Door opened at floor 2
-[08:21:24] Person unloaded [George arrived at 07:30:39 going to 2] at floor 2
-[08:21:24] Elevator decides to go to floor [4, 6]
-[08:21:24] Going UP to floor 4, arrival in 42s
-
-[08:22:06] Arrived at floor 4
-[08:22:09] Door opened at floor 4
-[08:22:18] Person unloaded [Kyle arrived at 07:29:30 going to 4] at floor 4
-[08:22:18] Elevator decides to go to floor [6]
-[08:22:18] Going UP to floor 6, arrival in 42s
-
-[08:23] Arrived at floor 6
-[08:23:03] Door opened at floor 6
-[08:23:12] Person unloaded [Dennis arrived at 07:39:57 going to 6] at floor 6
-[08:23:12] Elevator decides to go to floor [9]
-[08:23:12] Going UP to floor 9, arrival in 48s
-
-[08:24] Arrived at floor 9
-[08:24:03] Door opened at floor 9
-[08:24:03] Elevator decides to go to floor [1, 2, 4, 5]
-[08:24:03] Going DOWN to floor 1 from floor 9
-[08:24:12] Person loaded [Brittany arrived at 07:30:51 going to 4] at floor 9
-[08:24:12] Person loaded [Marie arrived at 07:42:36 going to 4] at floor 9
-[08:24:12] Person loaded [Janet arrived at 07:44:45 going to 5] at floor 9
-[08:24:12] Person loaded [Jose arrived at 07:53:06 going to 1] at floor 9
-[08:24:12] Person loaded [Robert arrived at 07:55:48 going to 2] at floor 9
-[08:24:15] Door closed at floor 9, going to floor 1
-
-[08:25:06] Arrived at floor 1
-[08:25:09] Door opened at floor 1
-[08:25:18] Person unloaded [Jose arrived at 07:53:06 going to 1] at floor 1
-[08:25:18] Elevator decides to go to floor [2, 4, 5]
-[08:25:18] Going UP to floor 2, arrival in 18s
-
-[08:25:36] Arrived at floor 2
-[08:25:39] Door opened at floor 2
-[08:25:48] Person unloaded [Robert arrived at 07:55:48 going to 2] at floor 2
-[08:25:48] Elevator decides to go to floor [4, 5]
-[08:25:48] Going UP to floor 4, arrival in 42s
-
-[08:26:30] Arrived at floor 4
-[08:26:33] Door opened at floor 4
-[08:26:42] Person unloaded [Brittany arrived at 07:30:51 going to 4] at floor 4
-[08:26:42] Person unloaded [Marie arrived at 07:42:36 going to 4] at floor 4
-[08:26:42] Elevator decides to go to floor [5]
-[08:26:42] Going UP to floor 5, arrival in 18s
-
-[08:27] Arrived at floor 5
-[08:27:03] Door opened at floor 5
-[08:27:12] Person unloaded [Janet arrived at 07:44:45 going to 5] at floor 5
-[08:27:12] Elevator decides to go to floor [1]
-[08:27:12] Going DOWN to floor 1, arrival in 39s
-
-[08:27:51] Arrived at floor 1
-[08:27:54] Door opened at floor 1
-
-[08:27:54] Stopping at floor 1
-People waiting on floor 1
-	No one
-People waiting on floor 2
-	No one
-People waiting on floor 3
-	No one
-People waiting on floor 4
-	No one
-People waiting on floor 5
-	No one
-People waiting on floor 6
-	No one
-People waiting on floor 7
-	No one
-People waiting on floor 8
-	No one
-People waiting on floor 9
-	No one
-People waiting on floor 10
-	No one
-Elevator stopped at floor 1 No one left in the elevator
-[08:27:57] Times up
-People loaded: 143
-Max people loaded: 15
- 0h  0mn 30s -> 108
- 0h  3mn  0s -> 90
- 0h  6mn  0s -> 54
- 0h 15mn  0s -> 16
- 0h 30mn  0s -> 12
+[08:45] Times up
+People loaded: 38
+Max people loaded: 14
+ 0h  0mn 30s -> 31
+ 0h  3mn  0s -> 18
+ 0h  6mn  0s -> 3
+ 0h 15mn  0s -> 0
+ 0h 30mn  0s -> 0
  1h  0mn  0s -> 0
-Number of people taken = 143
-Average waiting time = 12mn 15s
-Max waiting time = 0h 55mn 51s
-People left in elevator = 0
-People left in floors = 0
+Number of people taken = 36
+Average waiting time = 4mn 7s
+Max waiting time = 0h 8mn 9s
+People left in elevator = 2
+People left in floors = 53
