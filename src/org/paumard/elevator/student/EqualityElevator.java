@@ -63,6 +63,7 @@ public class EqualityElevator implements Elevator {
 				List<Integer> destinationFloorsForCurrentFloor =
 						findDestinationFloors(waitingListForCurrentFloor);
 				destinations.addAll(destinationFloorsForCurrentFloor);
+
 				destinations.sort(Comparator.naturalOrder());
 				return destinations;
 			}
@@ -108,11 +109,15 @@ public class EqualityElevator implements Elevator {
 			this.destinations.remove(0);
 		}
 		
+		System.out.println(this.time  +  "    " + destinations + "\n");
+		
 		this.currentFloor = floor;
 	}
 
 	int index;
 	private List<Integer> WeCanTakeThemOnTheWay(){
+		
+		commutation = 1;
 		List<Integer> intermediateFloors = new ArrayList<>();
 
 		for (int indexFloor = currentFloor-2; indexFloor > 0 ; indexFloor --) {
@@ -121,27 +126,27 @@ public class EqualityElevator implements Elevator {
 			List<Person> waitingList = this.peopleByFloor.get(indexFloor);
 			if (!waitingList.isEmpty()) {
 				List<Person> sameDirection = waitingList.stream()
-						.filter(p -> p.getDestinationFloor() < index)
+						.filter(p -> p.getDestinationFloor() < index+1)
 						.collect(Collectors.toList());
 				if (!sameDirection.isEmpty()) {
 					intermediateFloors.add(indexFloor+1);
-					var =true;
 				}
 			}
 		}
 		
 		for (Integer integer : intermediateFloors) {
-			destinations.addAll(findDestinationFloors(peopleByFloor.get(integer-1)).stream()
-																					 .filter(i -> i < integer)
-																					 .collect(Collectors.toList()));
+			destinations.addAll(findDestinationFloors
+					(peopleByFloor.get(integer-1)).stream()
+						  						  .filter(i -> i < integer)
+						  						  .collect(Collectors.toList()));
 
 		}
-		
+
 		return intermediateFloors;
 	}
 
 	int signFromDirection;
-	private List<Integer> weCanTakeThemOnStop(int floor) {
+	private void weCanTakeThemOnStop(int floor) {
 		if(destinations.size() == 0 && this.direction == direction.UP)
 			signFromDirection = -1;
 		else
@@ -153,17 +158,12 @@ public class EqualityElevator implements Elevator {
 				.distinct()
 				.collect(Collectors.toList());
 
-		return additionnalFloors;
+		destinations.addAll(additionnalFloors);
+		destinations.sort(Comparator.naturalOrder());
+
 	}
 
-	private int signFromEnum() {
-		if (destinations.size() == 0 && this.direction == direction.UP || this.direction == direction.DOWN )
-			return -1;
-		else
-			return 1;
-	}
 
-	boolean var = false;
 	@Override
 	public void loadPeople(List<Person> people) {
 		this.people.addAll(people);  
@@ -172,25 +172,34 @@ public class EqualityElevator implements Elevator {
 
 	}
 
+	int commutation=4;
 	@Override
 	public void unload(List<Person> person) {
-		
-		destinations.addAll(weCanTakeThemOnStop(currentFloor-1));
+		if (direction == direction.UP)
+		weCanTakeThemOnStop(currentFloor-1);
 
 		List<Integer> weCanTakeThemOnTheWay = new ArrayList<>();
+		
 		if(currentFloor == 10) {
-			weCanTakeThemOnTheWay = WeCanTakeThemOnTheWay();
+			
+			if (commutation > 0) {
+				commutation --;			
+				weCanTakeThemOnTheWay = List.of(1);
+			}
 
+			else {
+				weCanTakeThemOnTheWay = WeCanTakeThemOnTheWay();
+				commutation = 4;
+			}
+				
 		destinations.addAll(weCanTakeThemOnTheWay);
 
 		destinations = destinations.stream()
 				.distinct()
 				.collect(Collectors.toList());
 		
-		System.out.println("\n\n" + this.time +  "    " + direction +"\n");
 		
 			destinations.sort(Comparator.reverseOrder());
-
 		}
 		this.people.removeAll(people);
 	}
