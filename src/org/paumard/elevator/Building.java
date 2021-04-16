@@ -29,7 +29,7 @@ public class Building {
     public static final int MAX_FLOOR = 10;
     public static final LocalTime START_TIME = LocalTime.of(6, 0, 0);
     //public static final LocalTime END_TIME = LocalTime.of(7, 30, 0);
-    public static final LocalTime END_TIME = LocalTime.of(22, 30, 0);
+    public static final LocalTime END_TIME = LocalTime.of(12, 30, 0);
     public static final LocalTime END_OF_DAY = END_TIME.plusHours(1);
     public static Random random = new Random(10L); // 10L
     private static LocalTime time = START_TIME;

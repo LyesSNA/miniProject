@@ -8,10 +8,16 @@ import org.paumard.elevator.model.Person;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class EqualityElevator implements Elevator {
 	private static final int ANGER_LIMIT_THRESHOLD = 600;
@@ -49,25 +55,62 @@ public class EqualityElevator implements Elevator {
 			return this.destinations;
 		}
 
-		int numberOfPeopleWaiting = countWaitingPeople();
-		if (numberOfPeopleWaiting > 0) {
-			List<Integer> nonEmptyFloors = findNonEmptyFloor();
-			int nonEmptyFloor = nonEmptyFloors.get(0);
-			if (nonEmptyFloor != this.currentFloor) {
-				return List.of(nonEmptyFloor);
-			} else {
-				int indexOfCurrentFloor = this.currentFloor - 1;
-				List<Person> waitingListForCurrentFloor =
-						this.peopleByFloor.get(indexOfCurrentFloor);
+			int numberOfPeopleWaiting = countWaitingPeople();
+			if (numberOfPeopleWaiting > 0) {
+				List<Integer> nonEmptyFloors = findNonEmptyFloor();
+				int nonEmptyFloor = nonEmptyFloors.get(0);
+				if (nonEmptyFloor != this.currentFloor) {
+					return List.of(nonEmptyFloor);
+				} else {
+					
+					if (this.time.compareTo(LocalTime.NOON)== -1) {
+						if (currentFloor == 1) {
+											
+							Map<Integer, Double> unsortedDestinationsByDuration = peopleByFloor.get(0).stream()
+												.collect(Collectors.groupingBy(p -> p.getDestinationFloor(), 
+														Collectors.summingDouble(p -> (Duration.between(p.getArrivalTime(), time)).toSeconds())));
+						
+							Map<Integer, Double>  destinationFloorsWithDuration =
+									unsortedDestinationsByDuration.entrySet().stream()
+								       .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+								       .limit(10)
+								       .collect(Collectors.toMap(
+								          Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+							
+							
+							List <Integer> destinationFloorsForCurrentFloor = new ArrayList<>(destinationFloorsWithDuration.keySet());
 
-				List<Integer> destinationFloorsForCurrentFloor =
-						findDestinationFloors(waitingListForCurrentFloor);
-				destinations.addAll(destinationFloorsForCurrentFloor);
+							int peopleCount = 0;
+							for (Integer integer : destinationFloorsForCurrentFloor) {
+								System.out.println(destinations);
+								if(peopleCount < 15)
+								destinations.add(integer);
+								peopleCount += peopleByFloor.get(0).stream()
+											 		.filter(p -> p.getDestinationFloor() == integer)
+											 		.count();
+								System.out.println(destinations);
+							}
+							
+							destinations.sort(Comparator.naturalOrder());
+							System.out.println(destinationFloorsWithDuration);
+							System.out.println(destinationFloorsForCurrentFloor);
+							return destinations;
+						}
+					}
+					
+					else {
+					int indexOfCurrentFloor = this.currentFloor - 1;
+					List<Person> waitingListForCurrentFloor =
+							this.peopleByFloor.get(indexOfCurrentFloor);
 
-				destinations.sort(Comparator.naturalOrder());
-				return destinations;
+					List<Integer> destinationFloorsForCurrentFloor =
+							findDestinationFloors(waitingListForCurrentFloor);
+					destinations.addAll(destinationFloorsForCurrentFloor);
+
+					destinations.sort(Comparator.naturalOrder());
+					return destinations;
+				}}
 			}
-		}
 		return List.of(1);
 	}
 
